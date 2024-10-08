@@ -44,5 +44,7 @@ Dado o tempo limitado, compreendemos que talvez não seja possível implementar 
 
 ## Recursos úteis
 [www.godotengine.org - site oficial](https://godotengine.org/)
+
 [Docs](https://docs.godotengine.org/en/stable/about/introduction.html)
+
 [How to make a Video Game - Godot Beginner Tutorial (Youtube Video)](https://www.youtube.com/watch?v=LOhfqjmasi0)
