@@ -4,6 +4,7 @@ const SPEED = 70.0
 var is_control_disabled = false
 var knockback_force = Vector2.ZERO
 const KNOCKBACK_DECAY = 500.0
+var fuel: int = 100
 
 func _physics_process(delta: float) -> void:
 	if is_control_disabled:
@@ -27,3 +28,7 @@ func apply_knockback(knockback_force: Vector2) -> void:
 	is_control_disabled = true
 	self.knockback_force = knockback_force
 	self.knockback_force.y = 0
+
+func add_fuel(amount: int) -> void:
+	fuel += amount
+	print("Fuel: ", fuel)
