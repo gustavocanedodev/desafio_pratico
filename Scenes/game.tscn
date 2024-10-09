@@ -16,7 +16,7 @@ distance = -40.0
 
 [node name="Game" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_p5svh")]
+[node name="Player" parent="." instance=ExtResource("1_p5svh")]
 position = Vector2(0, 43)
 
 [node name="Camera2D" type="Camera2D" parent="."]

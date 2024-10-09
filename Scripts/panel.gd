@@ -7,7 +7,11 @@ func _ready() -> void:
 	$Timer.start()
 
 func _on_timer_timeout() -> void:
-	fuel -= 1
+	fuel -= 2
 	if fuel < 0:
 		fuel = 0
+	$FuelCounter.text = "Fuel: " + str(fuel)
+
+func add_fuel(amount: int) -> void:
+	fuel += amount
 	$FuelCounter.text = "Fuel: " + str(fuel)
