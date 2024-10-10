@@ -25,42 +25,53 @@ zoom = Vector2(4, 4)
 [node name="Walls" type="StaticBody2D" parent="."]
 
 [node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(2, 0)
 shape = SubResource("WorldBoundaryShape2D_ent4k")
 
 [node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(-2, 1)
 shape = SubResource("WorldBoundaryShape2D_am735")
 
 [node name="Sprite2D" type="Sprite2D" parent="Walls"]
-position = Vector2(44, 0.499998)
+position = Vector2(42, 0)
 scale = Vector2(1, 7.40909)
 texture = ExtResource("2_43ury")
 region_enabled = true
 region_rect = Rect2(69.5535, 91.4395, 10.645, 22.2853)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Walls"]
-position = Vector2(-44, 0.249998)
+position = Vector2(-42, -1.49012e-08)
 scale = Vector2(1, 7.38636)
 texture = ExtResource("2_43ury")
 region_enabled = true
 region_rect = Rect2(69.5535, 91.4395, 10.645, 22.2853)
 
-[node name="Fuel" parent="." instance=ExtResource("2_mt5du")]
-position = Vector2(-11, -91)
-
 [node name="Fuel2" parent="." instance=ExtResource("2_mt5du")]
-position = Vector2(-1, -350)
-
-[node name="Fuel3" parent="." instance=ExtResource("2_mt5du")]
-position = Vector2(21, -209)
+position = Vector2(15, -293)
 
 [node name="BlueCar" parent="." instance=ExtResource("4_r188w")]
 position = Vector2(16, -142)
 
-[node name="BlueCar2" parent="." instance=ExtResource("4_r188w")]
-position = Vector2(-20, -246)
+[node name="BlueCar4" parent="." instance=ExtResource("4_r188w")]
+position = Vector2(-9, -344)
 
-[node name="BlueCar3" parent="." instance=ExtResource("4_r188w")]
-position = Vector2(19, -270)
+[node name="BlueCar5" parent="." instance=ExtResource("4_r188w")]
+position = Vector2(25, -464)
+
+[node name="BlueCar7" parent="." instance=ExtResource("4_r188w")]
+position = Vector2(-14, -578)
+
+[node name="BlueCar8" parent="." instance=ExtResource("4_r188w")]
+position = Vector2(7, -525)
+
+[node name="BlueCar9" parent="." instance=ExtResource("4_r188w")]
+position = Vector2(-20, -412)
+
+[node name="BlueCar6" parent="." instance=ExtResource("4_r188w")]
+position = Vector2(12, -205)
+
+[node name="BlueCar2" parent="." instance=ExtResource("4_r188w")]
+position = Vector2(-22, -249)
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 172.0

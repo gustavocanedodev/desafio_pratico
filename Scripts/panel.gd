@@ -1,6 +1,6 @@
 extends Panel
 
-var fuel: int = 100
+var fuel: int = 20
 
 func _ready() -> void:
 	$FuelCounter.text = "Fuel: " + str(fuel)
